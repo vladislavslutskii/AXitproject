@@ -1,0 +1,46 @@
+.download-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .download-span{
+        font-size: $_30px;
+        font-weight: 500;
+        color: $black;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .download-text {
+        margin-bottom: 47px;
+        p{
+            font-size: $_18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $black;
+            text-align: center;
+    
+        }
+    }
+    .download-btn{ 
+        line-height: 80px;
+        width: 370px;
+        background: $red;
+        text-align: center;
+        cursor: pointer;
+        transition: 1s;
+        a{
+            color: $white;
+            font-weight: 900;
+            font-size: $_24px;
+            text-transform: uppercase;
+        }
+        &:hover{
+            transform: scale(1.1);
+            transition: 1s;
+            box-shadow: 2px 0px 16px 9px rgb(251 0 34 / 44%);
+            border-radius: 10px;
+        }
+    }
+    
+}

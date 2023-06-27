@@ -1,0 +1,68 @@
+.team-item {
+  width: 262px;
+  margin: 0 15px;
+  .team-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 270px;
+    height: 270px;
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+    }
+  }
+  .name {
+    font-family: $raleway;
+    font-size: $_24px;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 5px;
+    transition: 0.1s;
+    
+  }
+  .position {
+    font-family: $raleway;
+    font-size: $_18px;
+    font-weight: 400;
+    color: $red;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .team-text {
+    margin-bottom: 38px;
+    p {
+      font-family: $raleway;
+      font-size: $_18px;
+      font-weight: 400;
+      color: $darkgrey;
+    }
+  }
+  .team-icon {
+    display: flex;
+    justify-content: flex-start;
+    a {
+      font-weight: 400;
+      color: $lightgrey;
+      font-size: 19px;
+      width: 39px;
+      height: 39px;
+      border: 1px solid $lightgrey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 5px;
+      transition: 0.1s;
+    }
+    a:hover {
+      color: $lightblue;
+      transition: 0.1s;
+      border: 2px solid $lightblue;
+      transform: scale(1.2);
+    }
+    @media (max-width: 1200px) {
+      margin-bottom: 38px;
+    }
+  }
+}

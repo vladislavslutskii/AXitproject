@@ -1,0 +1,87 @@
+.slider-section {
+  padding: 0;
+}
+
+.slider{
+  .slider-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .pic {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 1200px) {
+        width: 50%;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+      background: $bordo;
+      width: 50%;
+      // padding: 116px 170px 116px 129px;
+      padding: 7.25em 7.185em 7.25em 7.5em;
+      @media (max-width: 1200px) {
+        width: 50%;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      @media (max-width: 430px) {
+        padding: 2.2307em 1.9231em 7.3077em 1.5385em;
+      }
+      p {
+        font-family: $cardo;
+        font-size: $_36px;
+        font-weight: 400;
+        font-style: italic;
+        color: $white;
+        text-align: start;
+        text-transform: capitalize;
+        margin-bottom: 37px;
+
+        @media (max-width: 767px) {
+          width: 330px;
+          line-height: 50px;
+          text-align: center;
+        }
+        @media (max-width: 430px) {
+          text-align: center;
+          line-height: 45px;
+          font-size: 24px;
+        }
+      }
+      :last-child {
+        font-family: $raleway;
+        font-size: $_13px;
+        font-weight: 700;
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        font-style: initial;
+        @media (max-width: 767px) {
+          font-size: 12px;
+          text-align: center;
+        }
+        @media (max-width: 430px) {
+          width: 275px;
+        }
+      }
+    }
+  }
+}

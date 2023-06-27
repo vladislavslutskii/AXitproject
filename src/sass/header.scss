@@ -1,0 +1,168 @@
+.header{
+    background:url(../img/bg/img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 0  120px;
+    position: relative;
+    z-index: 1;
+    &::after{
+        content:"";
+        display: block;
+        background: rgba(37, 43, 73, 0.8);
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index:2;
+    
+
+    }
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $grey;
+    margin-bottom: 130px;
+    @media(max-width:992px){
+        justify-content: center;
+    }
+    
+    // &:after{
+    //     content: "";
+    //     display: block;
+    //     border: 1px solid $grey;
+    //     width: 1140px;
+    //     margin: auto;
+    // }
+}
+.header-logo{
+    width: 270px;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    img{
+        width:100%;
+    }
+    @media(max-width:992px){
+        margin-left: 75px;
+    }
+}
+
+
+.header-navigation{
+    
+    .header-list{
+        display: flex;
+        flex-wrap: wrap;
+        .header-list-item{
+            width: 134px;
+            cursor: pointer;
+            padding: 34px 0;
+            text-align: center;
+            line-height: 28px;
+            border-bottom: 3px solid transparent;
+            transition: 1s;
+            &:hover{
+                color:$grey;
+                border-bottom: 3px solid $grey;
+                box-shadow: inset 0px -3px 20px 0px rgb(106 120 168 / 80%);
+                transform: scale(1.04);
+                transition: 1s;
+
+                // a{
+                //     font-size: 1rem;
+                //     transition: 0.1s;
+                // }
+                // border-radius: 5px;
+            }
+            a{
+                font-family: $raleway;
+                font-size: $_13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $white;
+                
+            }
+        }
+    }
+    @media (max-width: 430px) {
+       display:none;
+    }
+}
+.header-content{
+    .main-title{
+        font-family: $raleway;
+        font-weight: 900;
+        font-size: $_64px;
+        color:$white;
+        text-align: center;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+        animation: titleanimation;
+        animation-duration: 3.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-play-state: running;
+        @keyframes titleanimation{
+            0%{
+                color: $white;
+            }
+            50%{
+                color: rgba(169, 136, 253, 0.8);
+                transform: translate(5px, -50px);
+            
+            }
+            100%{
+                color: rgba(187, 186, 245, 0.8);
+                transform: translate(5px, -10px);
+            }
+        }
+    }
+    .header-text{
+        margin-bottom: 80px;
+        p{
+            font-family: $raleway;
+            font-size: $_24px;
+            font-weight: 400;
+            text-align: center;
+            padding: 0 60px;
+        }
+        
+    }
+    .header-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        button{
+            width: 313px;
+            color:$white;
+            line-height: 80px;
+            background: $red;
+            font-size: $_24px;
+            font-weight: 900;
+            font-family: $raleway;
+            cursor: pointer;
+            animation: pulse;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            @keyframes pulse{
+                50%{
+                    transform: scale(1.1);
+                    box-shadow:0px 0px 20px 9px rgb(215 67 67 / 80%);
+                }
+            }
+            
+            // transition: 0.5s;
+            // &:hover{
+            //     box-shadow:0px 0px 20px 9px rgb(215 67 67 / 80%);
+            //     transition: 0.5s;
+            // }
+        }
+    }
+}

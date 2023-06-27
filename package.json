@@ -1,0 +1,20 @@
+{
+  "name": "fe28-activeboxproject-dudko-maria",
+  "version": "1.0.0",
+  "description": "ActiveBox",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.1",
+    "parcel": "^2.4.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}

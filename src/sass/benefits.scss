@@ -1,0 +1,59 @@
+// .fa-pen-to-square{
+//     font-size: $_36px;
+//     color: red;
+// }
+// .benefits{
+//     padding: 115px 0 ;
+// }
+.benefits-item {
+  width: 350px;
+  margin: 0 15px 87px;
+  cursor: pointer;
+  transition: 1s;
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  &:hover {
+    // transform: skew(2 2)
+    // transform: matrix(1, 0, 0, 1, -20, -70);
+    transition: 2s;
+    transform: rotate(-360deg);
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .benefits-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 30px;
+    }
+    .benefits-title {
+      font-weight: 900;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 21px;
+    }
+    .benefits-text {
+      p {
+        font-weight: 400;
+        font-size: $_18px;
+        text-align: center;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    margin: 0 15px 87px;
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 87px;
+    }
+  }
+  @media (max-width: 430px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
